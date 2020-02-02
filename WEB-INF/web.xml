@@ -1,0 +1,13 @@
+<web-app>
+    <display-name>
+        Esercizio 6
+    </display-name>
+    <servlet>
+        <servlet-name>servlet_inserimento</servlet-name>
+        <servlet-class>servlet_inserimento</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet_inserimento</servlet-name>
+        <url-pattern>/servlet_inserimento</url-pattern>
+    </servlet-mapping>
+</web-app>
