@@ -9,12 +9,11 @@ public class servlet_inserimento extends HttpServlet{
         String nome = request.getParameter("nome");
         String cognome = request.getParameter("cognome");
         int annoDiNascita = Integer.parseInt(request.getParameter("anno"));
+        Utente utente = new Utente(nome,cognome,annoDiNascita);
 
         HttpSession session = request.getSession();
 
-        session.setAttribute("nome",nome);
-        session.setAttribute("cognome",cognome);
-        session.setAttribute("annoDiNascita",annoDiNascita);
+        session.setAttribute("utente",utente);
 
         if (annoDiNascita<2000){
             response.sendRedirect("servlet_destinazione");

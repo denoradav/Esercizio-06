@@ -10,4 +10,20 @@
         <servlet-name>servlet_inserimento</servlet-name>
         <url-pattern>/servlet_inserimento</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>servlet_destinazione</servlet-name>
+        <servlet-class>servlet_destinazione</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet_destinazione</servlet-name>
+        <url-pattern>/servlet_destinazione</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>chk_log</servlet-name>
+        <servlet-class>chk_log</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>chk_log</servlet-name>
+        <url-pattern>/chk_log</url-pattern>
+    </servlet-mapping>
 </web-app>
